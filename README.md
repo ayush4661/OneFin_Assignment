@@ -1,46 +1,6 @@
 Backend Assignment
 
-Introduction	1
-Integrate with movie listing API	2
-Implement APIs for your web application	3
-Implement a request counter middleware	6
-
-Introduction
-
-The assignment is to judge your understanding of various concepts which are required to be applied in a Django project to make it resilient and working under concurrent requests. To submit the assignment push your code on Github and share the link of the repository with us. You will have three days time since you receive the assignment to finish the assignment.
-
-We will evaluate the assignment by asking these questions:
-
-Is your code actually doing what is asked in the assignment?
-Is your code clean and modular? Are you cleanly factoring your views to keep most of the code outside of views?
-Does your counter implementation work in parallel execution of code?
-Is your code following PEP8 code formatting guidelines?
-Have you followed Django development best practices?
-Have you added tests for your code? You can use Factory boy for generating fixtures. Are meaningful assertions present in your tests?
-Is your requirements file updated with all requirements?
-
-We need to develop a web application which allows people to create collections of movies they like. There are three parts to this:
-
-Integration with an API which serves a list of movies and their genres, details are specified here.
-
-Use the API to list movies for the users of your web application. They should be able to see the list of movies and add any movie which they like into their collections. Each user can create multiple collections and multiple movies into the collections. Develop APIs for this application per specification below. No frontend is required to be developed.
-
-We also want to have a monitoring system of counting the number of requests done to your project. Write a custom middleware for counting all requests coming to your server too, and an API to monitor it too. Details here.
-
-Integrate with movie listing API
-
-Integrate a third party API which serves a list of movies. Note that this API is flaky, and often fails and/or time outs please built-in retry mechanisms in your project. You have to use basic auth for authentication, id and secret for which are given below.
-
-Notes
-Do not hardcode the client and client secret in your code, you can get it from os environment variables.
-Note that the password has no space in it, if you copy-paste the password, you may end up putting a space in it.
-
-
-Username:
-iNd3jDMYRKsN1pjQPMRz2nrq7N99q4Tsp9EY9cM0
-
-Password:
-Ne5DoTQt7p8qrgkPdtenTK8zd6MorcCR5vXZIJNfJwvfafZfcOs4reyasVYddTyXCz9hcL5FGGIVxw3q02ibnBLhblivqQTp4BIC93LZHj4OppuHQUzwugcYu7TIC5H1
+API Details:
 
 GET https://demo.credy.in/api/v1/maya/movies/
 
