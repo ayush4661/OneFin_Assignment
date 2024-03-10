@@ -2,29 +2,6 @@ Backend Assignment
 
 API Details:
 
-GET https://demo.credy.in/api/v1/maya/movies/
-
-The response is a paginated list of movies, returning 10 movies at a time:
-
-{
-    “count”: <total number of movies>,
-    “next”: <link for next page, if present>,
-    “previous”: <link for previous page>,
-    “data”: [
-        {
-            “title”: <title of the movie>,
-            “description”: <a description of the movie>,
-            “genres”: <a comma separated list of genres, if present>,
-		 “uuid”: <a unique uuid for the movie>
-        },
-        ...
-    ]
-}
-
-Implement APIs for your web application
-
-In your web application, you should allow users to register using a username and password, which should return a JWT token which should be used for authentication. All requests except the registration one should be authenticated. Post-registration, the user should be able to create collections and add movies to their collections, view, modify and delete them, essentially, you need to create CRUD APIs for collections. For all APIs and responses related to collections, you can create models, where all data related to those APIs are stored.
-
 POST http://localhost:8000/register/
 
 Request Payload:
