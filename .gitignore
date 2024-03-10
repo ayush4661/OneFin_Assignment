@@ -1,0 +1,5 @@
+/dev
+/MovieSystem/db.sqlite3
+/MovieSystem/MovieSystem/__pycache__
+/MovieSystem/User/__pycache__
+/MovieSystem/Movie/__pycache__
