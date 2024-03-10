@@ -3,3 +3,6 @@
 /MovieSystem/MovieSystem/__pycache__
 /MovieSystem/User/__pycache__
 /MovieSystem/Movie/__pycache__
+/MovieSystem/Movie/migrations/__pycache__
+/MovieSystem/User/migrations/__pycache__
+/MovieSystem/middlewares/__pycache__
